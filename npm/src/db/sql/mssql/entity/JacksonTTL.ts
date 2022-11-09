@@ -1,17 +1,12 @@
-import { Entity, Column, Index } from 'typeorm';
+import { Entity, Column } from 'typeorm';
+import { BaseJacksonTTL } from '../../base-entity/BaseJacksonTTL';
 
 @Entity()
-export class JacksonTTL {
+export class JacksonTTL extends BaseJacksonTTL {
   @Column({
     primary: true,
     type: 'varchar',
     length: 1500,
   })
   key!: string;
-
-  @Index('_jackson_ttl_expires_at')
-  @Column({
-    type: 'bigint',
-  })
-  expiresAt!: number;
 }

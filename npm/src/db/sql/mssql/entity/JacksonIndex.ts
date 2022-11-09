@@ -1,26 +1,10 @@
 import { JacksonStore } from './JacksonStore';
 
-import { Entity, PrimaryGeneratedColumn, Column, Index, ManyToOne } from 'typeorm';
+import { Entity, ManyToOne } from 'typeorm';
+import { BaseJacksonIndex } from '../../base-entity/BaseJacksonIndex';
 
-@Index('_jackson_index_key_store', ['key', 'storeKey'])
 @Entity()
-export class JacksonIndex {
-  @PrimaryGeneratedColumn()
-  id!: number;
-
-  @Index('_jackson_index_key')
-  @Column({
-    type: 'varchar',
-    length: 1500,
-  })
-  key!: string;
-
-  @Column({
-    type: 'varchar',
-    length: 1500,
-  })
-  storeKey!: string;
-
+export class JacksonIndex extends BaseJacksonIndex {
   @ManyToOne(() => JacksonStore, undefined, {
     //inverseSide: 'in',
     eager: true,
