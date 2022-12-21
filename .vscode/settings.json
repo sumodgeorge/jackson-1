@@ -4,5 +4,15 @@
     "**/.next": true,
     "**/.nyc_output": true,
     "**/node_modules": true
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
   }
 }

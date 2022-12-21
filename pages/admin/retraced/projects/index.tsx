@@ -1,14 +1,14 @@
-import type { NextPage } from 'next';
-import { DocumentMagnifyingGlassIcon, PlusIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import EmptyState from '@components/EmptyState';
-import { useProjects } from '@lib/ui/retraced';
-import Loading from '@components/Loading';
 import ErrorMessage from '@components/Error';
 import { IconButton } from '@components/IconButton';
-import { useTranslation } from 'next-i18next';
-import router from 'next/router';
 import { LinkPrimary } from '@components/LinkPrimary';
+import Loading from '@components/Loading';
+import { DocumentMagnifyingGlassIcon, PlusIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline';
+import { useProjects } from '@lib/ui/retraced';
+import type { NextPage } from 'next';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import router from 'next/router';
 
 const ProjectList: NextPage = () => {
   const { t } = useTranslation('common');

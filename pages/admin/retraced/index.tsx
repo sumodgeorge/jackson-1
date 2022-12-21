@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Retraced: NextPage = () => {
   const router = useRouter();
