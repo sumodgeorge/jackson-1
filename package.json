@@ -49,9 +49,9 @@
     "@opentelemetry/sdk-metrics": "1.9.1",
     "@opentelemetry/semantic-conventions": "1.9.1",
     "@retracedhq/logs-viewer": "2.4.6",
-    "@retracedhq/retraced": "0.6.2",
+    "@retracedhq/retraced": "0.7.21",
     "@tailwindcss/typography": "0.5.9",
-    "axios": "1.2.6",
+    "axios": "1.8.3",
     "classnames": "2.3.2",
     "cors": "2.8.5",
     "daisyui": "2.51.0",
@@ -67,7 +67,7 @@
     "react-dom": "18.2.0",
     "react-i18next": "12.2.0",
     "react-syntax-highlighter": "15.5.0",
-    "sharp": "0.31.3",
+    "sharp": "0.33.0",
     "swr": "2.0.3"
   },
   "devDependencies": {
